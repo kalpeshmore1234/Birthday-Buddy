@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  height:100%;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fae9e9;
+  overflow-x: hidden;
+}
+
+.birthday-card{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 40vw;
+  margin-top: 3.4em;
+  padding: 2em;
+}
+
+.person{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.img-block{
+  width: 75px;
+  height: 75px;
+}
+
+.img-block img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+
+h1{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+
+
+.name{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 0.5em;
+}
+
+.age{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color:#64748B;
+}
+
+.person:not(:last-child) {
+   margin-bottom: 1.5em;
+}
+
+.name-age-block{
+   padding-left: 1em;
+}
+
+button{
+  margin-top: 2em;
+  background-color: #D946EF;
+  color: white;
+  border: none;
+  height: 27px;
+  border-radius: 4px;
+  font-family: "poppins", sans-serif;
+}
+
+
+
+/* 
+--------------------Responsive------------------------ */
+
+@media screen and (max-width: 1000px) {
+  .birthday-card{
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 878px) {
+  .birthday-card{
+    width: 70vw;
+  }
+}
+
+
+@media screen and (max-width: 642px) {
+  .birthday-card{
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 642px) {
+  .birthday-card{
+    width: 90vw;
+  }
+}
